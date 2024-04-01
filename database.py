@@ -157,3 +157,27 @@ class DatabaseManager:
         )
 
 
+#update???  -> not working
+    def update(self, table_name, criteria, data):
+        '''
+        edit record 
+        UPDATE db
+        SET Col = 'new'
+        WHERE ID = 1;
+
+        To do so, this method:
+        1. take in table name and criteria with id
+        2. set data
+       
+        '''
+        data = data or {}
+        criteria = criteria or {}
+
+
+        query = f'SELECT * FROM {table_name}'
+        if data: 
+            query += f'SET {data}'
+        if criteria:
+            placeholders = [f'{column} = ?' for column in criteria.keys()]
+            select_criteria = ' AND '.join(placeholders)
+            query += f' WHERE {select_criteria}'

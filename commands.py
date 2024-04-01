@@ -6,7 +6,8 @@ import sys
 from abc import ABC, abstractmethod
 from datetime import datetime
 
-import requests
+import requests   
+#no module requests  => py -m pip install requests
 
 from database import DatabaseManager
 

@@ -8,8 +8,10 @@ import sqlite3
 
 import pytest
 
-
 from database import DatabaseManager
+
+# Return type of generator function must be compatible with "Generator[Any, Any, Any]" "Generator[Any, Any, Any]" is incompatible with "DatabaseManager"
+
 
 @pytest.fixture
 def database_manager() -> DatabaseManager:
