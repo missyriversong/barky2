@@ -1,0 +1,10 @@
+https://www.django-rest-framework.org/tutorial/quickstart/
+
+cd into project: tutorial
+then make app: quickstart
+
+to run migrations -> be in the rest_tutorial folder
+
+#user admin
+#email admin@example.com
+#pwsrd 12345
