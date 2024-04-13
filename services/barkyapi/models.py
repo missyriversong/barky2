@@ -6,8 +6,12 @@ from pygments.formatters.html import HtmlFormatter
 from pygments import highlight
 #pip install Pygments
 
-# pygments stuff
-LEXERS = [item for item in get_all_lexers() if item[1]]
+
+#  generic syntax highlighter suitable for use in code hosting, forums, wikis or other applications that need to prettify source code. 
+
+
+# pygments stuff - breaks down code into token aka smallest unit of meaningful code then apply relevant ..format for language and style...?
+LEXERS = [item for item in get_all_lexers() if item[1]] 
 LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])
 STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
 

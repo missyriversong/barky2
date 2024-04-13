@@ -1,6 +1,7 @@
 from .models import Bookmark, Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
 from django.contrib.auth.models import User
 from rest_framework import serializers
+#rest_framework missing?  -> https://www.django-rest-framework.org/#installation    Requirement already satisfied: djangorestframework ....?
 
 
 class BookmarkSerializer(serializers.HyperlinkedModelSerializer):
