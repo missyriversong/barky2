@@ -3,7 +3,8 @@ from django.urls import reverse
 from rest_framework import status
 from rest_framework import routers
 from rest_framework.test import APIRequestFactory, APITestCase
-
+#test views....?
+#https://www.django-rest-framework.org/api-guide/testing/
 from .models import Bookmark
 from .views import BookmarkViewSet
 

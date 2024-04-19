@@ -7,6 +7,7 @@ from .models import Bookmark, Snippet
 from .permissions import IsOwnerOrReadOnly
 from .serializers import BookmarkSerializer, SnippetSerializer, UserSerializer
 
+#https://www.django-rest-framework.org/api-guide/viewsets/
 
 # Create your views here.
 class BookmarkViewSet(viewsets.ModelViewSet):
