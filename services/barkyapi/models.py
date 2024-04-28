@@ -26,6 +26,7 @@ class Bookmark(models.Model):
 
     def __str__(self):
         return f"{self.title}"
+    
 
 
 class Snippet(models.Model):
@@ -40,6 +41,7 @@ class Snippet(models.Model):
     owner = models.ForeignKey(
         "auth.User", related_name="snippets", on_delete=models.CASCADE
     )
+    #? not sure how to create users...auth.User? 
     highlighted = models.TextField()
 
     class Meta:
@@ -61,3 +63,14 @@ class Snippet(models.Model):
 
     def __str__(self) -> str:
         return f"{self.title} - {self.id}"
+    
+
+
+
+    #     fields = ["id", "username", "snippets"]
+# class User(models.Model):
+#     id = models.IntegerField(primary_key=True)
+#     username = models.CharField(max_length=255)
+
+#     def __str__(self):
+#         return f"{self.username}"    

@@ -19,3 +19,11 @@ from repository import AbstractRepository
 #?BookmarkManager to retrieve and edit them?
 
 #? services as a class, function...creating a bookmark or getting list of bookmarks?
+
+
+
+
+#https://www.madelyneriksen.com/blog/service-pattern-in-django
+#why aren't we making a service to create bookmarks and users?  or does a serliazers really serve as a service handler?
+
+#need to move on from this..look at holistic code and thenn come back and fill in understanding...
